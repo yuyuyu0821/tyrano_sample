@@ -1,45 +1,72 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="恋愛シミュレーションゲーム(仮)"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+春、出会いの季節...[l][r]
 
-メロスは激怒した。[l][r]
+??? 「いっけなーい‼遅刻遅刻ゥ‼」[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+曲がり角を曲がったあたりで胴に強い衝撃が来た。[l][r]
 
-(中略)[l][r]
+??? 「いったーい‼」[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+目の前に自分と同じ制服を着た女子高生がいた。[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_musi] →無視して通り過ぎる [endlink][r]
+[link target=*tag_talk] →話しかける [endlink][r]
 [s]
 
-*tag_sleep
+*tag_musi
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=mental_health_man.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+残念、出会いを逃しましたね。[l][r]
+あなたは三年間灰色の高校生活です。[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*tag_talk
 
-[bg storage=run.jpg time=500]
+[bg storage=hashiru_syokupan_woman.png time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+女子高生は控えめに言って美少女だった[l][r]
+衝動的に告白しそうになった。[1][r]
+
+[link target=*tag_kokuhakusinai] →告白しない [endlink][r]
+[link target=*tag_kokuhakusuru] →告白する [endlink][r]
+
+*tag_kokuhakusinai
+
+[cm]
+
+[bg storage=mental_health_man.png time=500]
+
+残念、出会いを逃しましたね。[l][r]
+あなたは三年間灰色の高校生活です。[r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+
+
+*tag_kokuhakusuru
+
+[cm]
+
+[bg storage=couple_date.png time=500]
+
+よかったですね。[l][r]
+あなたに人生で初めての彼女ができました。[r]
+
 
 【 GOOD END 】[l][cm]
 
